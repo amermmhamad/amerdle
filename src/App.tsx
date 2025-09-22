@@ -86,7 +86,6 @@ export default function App() {
   return (
     <>
       <h1 className="title">Amerdle</h1>
-
       <div className="board">
         {guesses.map((guess, i) => {
           const isCurrentGuess = i === currentRow;
