@@ -5,7 +5,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      // anything starting with /wordle will be proxied
       "/wordle": {
         target: "https://api.frontendexpert.io",
         changeOrigin: true,
